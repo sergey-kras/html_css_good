@@ -78,16 +78,34 @@
 
 .owl-nav {
   position: absolute;
-  top: 50%;
+  top: 47%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
   span{
     display: none;
   }
   .owl-next{
-    height: 20px;
-    width: 20px;
+    background-image: url("../img/sprite.png") !important;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 44px;
+    background-position: -39px -5px !important;
+    background-size: cover;
+    position: absolute;
+    right: -50px;
+  }
+  .owl-prev{
+    position: absolute;
+    left: -50px;
+    transform: rotate(180deg);
+    background-image: url("../img/sprite.png") !important;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 44px;
+    background-position: -39px -5px !important;
+    background-size: cover;
   }
 }
