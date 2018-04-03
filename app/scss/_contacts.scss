@@ -1,0 +1,35 @@
+.contacts{
+  background: url("../img/bg2.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  position: relative;
+  padding-bottom: 50px;
+  .contacts_items{
+    @include size(10);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .contacts_item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      p{
+        font-family: "Open Sans";
+        font-size: 18px;
+      }
+      a{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+        text-decoration: none;
+        color: #000;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
