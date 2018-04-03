@@ -1,0 +1,28 @@
+.aboutUs{
+  .container{
+    @include size(7);
+    margin-bottom: 60px;
+  }
+  &_label{
+    font-size: 20px;
+    display: inline-block;
+    background: #ffb400;
+    background: -moz-linear-gradient(left, #ffcc00 0%, #ffb400 100%);
+    background: -webkit-linear-gradient(left, #ffcc00 0%, #ffb400 100%);
+    background: linear-gradient(to right, #ffcc00 0%,#ffb400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb400', endColorstr='#ffcc00',GradientType=1 );
+    border-radius: 100px;
+    padding: 5px 13px;
+    font-family: "Open Sans";
+    letter-spacing: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  p{
+    font-family: "Open Sans";
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}

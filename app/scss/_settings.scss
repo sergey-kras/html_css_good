@@ -1,0 +1,13 @@
+.container{
+  @include wrapper();
+  max-width: 1170px;
+  .title{
+    font-family: "Open Sans";
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+}
