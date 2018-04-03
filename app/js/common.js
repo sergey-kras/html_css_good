@@ -57,4 +57,28 @@ $('.catalog_items').owlCarousel({
             loop:false
         }
     }
-})
+});
+
+$('.reviews_items').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+    nav: true,
+    dots: true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true,
+            loop:true
+        },
+        600:{
+            items:1,
+            nav:true,
+            loop:true
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:true
+        }
+    }
+});
