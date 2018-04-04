@@ -1,3 +1,8 @@
+@mixin resp ($min,$max){
+  @media screen and (min-width: $min + 'px') and (max-width: $max + 'px'){
+    @content;
+  }
+}
 .container{
   @include wrapper();
   max-width: 1170px;
@@ -9,11 +14,9 @@
     text-transform: uppercase;
     font-size: 36px;
     margin-bottom: 60px;
-  }
-}
-@mixin resp ($min,$max){
-  @media screen and (min-width: $min + 'px') and (max-width: $max + 'px'){
-    @content;
+    @include resp(0, 560){
+      font-size: 24px;
+    }
   }
 }
 @include resp(1100,1250){

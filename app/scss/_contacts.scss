@@ -3,7 +3,7 @@
   background-size: cover;
   padding-top: 50px;
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   .contacts_items{
     @include size(10);
     margin: 0 auto;
@@ -16,10 +16,11 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       p{
         font-family: "Open Sans";
         font-size: 18px;
+        text-align: center;
       }
       a{
         padding-bottom: 10px;
@@ -30,6 +31,7 @@
         font-weight: bold;
         font-size: 20px;
         letter-spacing: 3px;
+        text-align: center;
       }
     }
   }
