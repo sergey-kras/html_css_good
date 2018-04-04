@@ -11,3 +11,28 @@
     margin-bottom: 60px;
   }
 }
+@mixin resp ($min,$max){
+  @media screen and (min-width: $min + 'px') and (max-width: $max + 'px'){
+    @content;
+  }
+}
+@include resp(1100,1250){
+   .container{
+     zoom: .9;
+   }
+ }
+@include resp(1000,1100){
+  .container{
+    zoom: .8;
+  }
+}
+@include resp(960,1000){
+   .container{
+     zoom: .7;
+   }
+ }
+@include resp(0,960){
+  .container{
+    zoom: .6;
+  }
+}
