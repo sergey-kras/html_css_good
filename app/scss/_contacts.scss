@@ -2,20 +2,21 @@
   background: url("../img/bg2.jpg") no-repeat center;
   background-size: cover;
   padding-top: 50px;
-  padding-bottom: 25px;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   .contacts_items{
     @include size(10);
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     .contacts_item{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-bottom: 15px;
       p{
         font-family: "Open Sans";
         font-size: 18px;
