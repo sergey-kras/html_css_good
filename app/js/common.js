@@ -46,11 +46,11 @@ $('.catalog_items').owlCarousel({
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:false
         },
         600:{
             items:2,
-            nav:false
+            nav:true
         },
         1000:{
             items:3,
@@ -68,7 +68,7 @@ $('.reviews_items').owlCarousel({
     responsive:{
         0:{
             items:1,
-            nav:true,
+            nav:false,
             loop:true
         },
         600:{

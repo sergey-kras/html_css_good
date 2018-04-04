@@ -23,6 +23,9 @@
       align-items: center;
       justify-content: center;
       border: 3px solid #ffd700;
+      @include resp(0, 600){
+        border: none;
+      }
       padding-top: 10px;
       padding-bottom: 10px;
       &_title{
@@ -107,5 +110,10 @@
     height: 44px;
     background-position: -39px -5px !important;
     background-size: cover;
+  }
+}
+.owl-stage-outer{
+  @include resp(0, 600){
+    border: 3px solid #ffd700;
   }
 }
