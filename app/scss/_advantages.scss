@@ -32,5 +32,11 @@
     position: absolute;
     right: 0px;
     top: -80px;
+    @include resp(0, 960){
+      text-align: center;
+      position: relative;
+      right: auto;
+      top: auto;
+    }
   }
 }
