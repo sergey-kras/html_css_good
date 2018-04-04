@@ -9,4 +9,13 @@
     text-decoration: none;
     border-radius: 100px;
   }
+  &:hover{
+    a{
+      background: #ffb400;
+      background: -moz-linear-gradient(left, #fc0 0%, #ffb400 100%);
+      background: -webkit-linear-gradient(left, #fc0 0%, #ffb400 100%);
+      background: linear-gradient(to right, #fc0 0%, #ffb400 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb400', endColorstr='#ffcc00',GradientType=1 );
+    }
+  }
 }

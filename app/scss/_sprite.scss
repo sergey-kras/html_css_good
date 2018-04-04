@@ -8,6 +8,9 @@
   width: 24px;
   height: 44px;
   background-position: -5px -5px;
+  &:hover{
+    background-position: -39px -5px;
+  }
 }
 
 .sprite-arrow_hover {
@@ -32,6 +35,9 @@
   width: 36px;
   height: 36px;
   background-position: -137px -5px;
+  &:hover{
+    background-position: -183px -5px;
+  }
 }
 
 .sprite-icon_inst_hover {
@@ -62,6 +68,9 @@
   width: 36px;
   height: 36px;
   background-position: -366px -5px;
+  &:hover{
+    background-position: -412px -5px;
+  }
 }
 
 .sprite-icon_vk_hover {
@@ -74,6 +83,9 @@
   width: 36px;
   height: 36px;
   background-position: -458px -5px;
+  &:hover{
+    background-position: -504px -5px;
+  }
 }
 
 .sprite-icon_you_hover {
@@ -86,6 +98,9 @@
   width: 63px;
   height: 64px;
   background-position: -550px -5px;
+  &:hover{
+    background-position: -623px -5px;
+  }
 }
 
 .sprite-play_hover {

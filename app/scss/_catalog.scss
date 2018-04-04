@@ -98,6 +98,9 @@
     background-size: cover;
     position: absolute;
     right: -50px;
+    &:hover{
+      background-position: -5px -5px!important;
+    }
   }
   .owl-prev{
     position: absolute;
@@ -110,6 +113,10 @@
     height: 44px;
     background-position: -39px -5px !important;
     background-size: cover;
+    &:hover{
+      background-position: -5px -5px!important;
+    }
+
   }
 }
 .owl-stage-outer{
