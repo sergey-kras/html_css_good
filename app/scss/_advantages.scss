@@ -6,6 +6,16 @@
   position: relative;
   .container{
     @include size(7);
+    @include resp(420,560){
+      @include size(10);
+    }
+    @include resp(0,420){
+      margin: 0 auto;
+      @include size(10);
+      img{
+        max-width: 100%;
+      }
+    }
   }
   &_list{
     padding: 0px;

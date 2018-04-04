@@ -4,6 +4,9 @@
   padding-bottom: 50px;
   .container{
     @include size(10);
+    @include resp(0,560){
+      @include size(12);
+    }
   }
   img{
     width: auto !important;
