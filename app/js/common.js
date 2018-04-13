@@ -35,8 +35,6 @@ $('.catalog_items').owlCarousel({
     responsiveClass:true,
     nav: true,
     dots: false,
-    mouseDrag : true,
-    touchDrag : true,
     responsive:{
         0:{
             items:1,
@@ -58,6 +56,7 @@ $('.reviews_items').owlCarousel({
     responsiveClass:true,
     nav: true,
     dots: true,
+    responsiveRefreshRate: 10,
     responsive:{
         0:{
             items:1,
@@ -117,16 +116,21 @@ $(document).on('click', '.start-video', function () {
     $("#thumbnail_container").hide();
     player.playVideo();
 });
-
 $('a[href^="#"]').click(function () {
     var target = $(this).attr('href');
     $('html, body').animate({scrollTop: $(target).offset().top }, 800);
     return false;
 });
 $(document).mouseup(function (event) {
-    var button = $('.product .button a')
-    if(button.is(event.target())){
-        event.preventDefault()
-        alert('dd');
+    var button = $('.catalog .button span');
+    var popUp = $('.popUp_content');
+    var close = $('.close img');
+    if(button.is(event.target)){
+        var product = $(event.target).parent().parent().find('.product_title').text();
+        console.log($('.popUp').find('input[name="product"]').val(product));
+        $(".popUp").show();
+    }
+    if(close.is(event.target)){
+        $(".popUp").hide();
     }
 });
