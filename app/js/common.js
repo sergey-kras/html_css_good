@@ -134,3 +134,15 @@ $(document).mouseup(function (event) {
         $(".popUp").hide();
     }
 });
+
+$('#send').click(function () {
+    $.ajax({
+        url: '/form.php',
+        type: 'GET',
+        dataType: "html", //формат данных
+        data: $("#form").serialize(),  // Сеарилизуем объект
+        success: function () {
+            $('.popUp_content .form').html('<p>В скором времени с вами свяжется наш менеджер для подтверждения заказа</p>')
+        }
+    })
+});

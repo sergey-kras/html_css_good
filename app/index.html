@@ -369,18 +369,20 @@
         <h4>
             Оформление <br> заказа
         </h4>
-        <form action="">
-            <label for="">
-                Введите имя
-            </label>
-            <input type="text" name="name" placeholder="Иван">
-            <label for="">
-                Введите номер телефона
-            </label>
-            <input type="text" style="display: none" name="product">
-            <input type="text" name="tel" placeholder="+7 (123) 456-78-90">
-            <input type="submit" value="Сделать заказ">
-        </form>
+        <div class="form">
+            <form action="" method="get" action="" id="form">
+                <label for="">
+                    Введите имя
+                </label>
+                <input type="text" name="name" placeholder="Иван" required>
+                <label for="">
+                    Введите номер телефона
+                </label>
+                <input type="text" style="display: none" name="product">
+                <input type="text" name="tel" placeholder="+7 (123) 456-78-90" required>
+                <input type="button" id="send" value="Сделать заказ">
+            </form>
+        </div>
     </div>
 </section>
 <link rel="stylesheet" href="css/main.css">
