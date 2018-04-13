@@ -1,20 +1,16 @@
 var day = 12;
 var hours = 22;
 var minutes = 12;
-
 var remain_bv   = day * 60 * 60 * 24 + hours * 60 * 60 + minutes * 60;
 function parseTime_bv(timestamp){
     if (timestamp < 0) timestamp = 0;
-
     var day = Math.floor( (timestamp/60/60) / 24);
     var hour = Math.floor(timestamp/60/60);
     var mins = Math.floor((timestamp - hour*60*60)/60);
     var secs = Math.floor(timestamp - hour*60*60 - mins*60);
     var left_hour = Math.floor( (timestamp - day*24*60*60) / 60 / 60 );
-
     $('.afss_day_bv').text(day);
     $('.afss_hours_bv').text(left_hour);
-
     if(String(mins).length > 1)
         $('.afss_mins_bv').text(mins);
     else
@@ -23,9 +19,7 @@ function parseTime_bv(timestamp){
         $('.afss_secs_bv').text(secs);
     else
         $('.afss_secs_bv').text("0" + secs);
-
 }
-
 $(document).ready(function(){
     setInterval(function(){
         remain_bv = remain_bv - 1;
@@ -35,18 +29,18 @@ $(document).ready(function(){
         }
     }, 1000);
 });
-
-
 $('.catalog_items').owlCarousel({
     loop:true,
     margin:25,
     responsiveClass:true,
     nav: true,
     dots: false,
+    mouseDrag : true,
+    touchDrag : true,
     responsive:{
         0:{
             items:1,
-            nav:false
+            nav:true
         },
         600:{
             items:2,
@@ -59,7 +53,6 @@ $('.catalog_items').owlCarousel({
         }
     }
 });
-
 $('.reviews_items').owlCarousel({
     loop:true,
     responsiveClass:true,
@@ -83,8 +76,6 @@ $('.reviews_items').owlCarousel({
         }
     }
 });
-
-
 //youtube script
 var tag = document.createElement('script');
 tag.src = "//www.youtube.com/iframe_api";
@@ -119,11 +110,23 @@ onPlayerStateChange = function (event) {
     if (event.data == YT.PlayerState.ENDED) {
         $('.start-video').fadeIn('normal');
     }
-}
-
+};
 $(document).on('click', '.start-video', function () {
     $(this).hide();
     $("#player").show();
     $("#thumbnail_container").hide();
     player.playVideo();
+});
+
+$('a[href^="#"]').click(function () {
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top }, 800);
+    return false;
+});
+$(document).mouseup(function (event) {
+    var button = $('.product .button a')
+    if(button.is(event.target())){
+        event.preventDefault()
+        alert('dd');
+    }
 });

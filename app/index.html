@@ -2,7 +2,7 @@
 <html lang=ru  id="contentHolder">
 <head>
     <meta charset="utf-8">
-    <title>Web-developer</title>
+    <title>Good</title>
     <meta name='description' content='' >
     <meta http-equiv='X-UA-Compatible' content='IE=edge' >
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
@@ -55,12 +55,14 @@
         </div>
         <div class="mainDisplay_more">
             <div class="button">
-                <a href="#">
+                <a href="#catalog">
                     Посмотреть каталог
                 </a>
             </div>
             <div class="to_bot">
-                <img src="../img/to_bot.png" alt="">
+                <a href="#catalog">
+                    <img src="../img/to_bot.png" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -105,7 +107,7 @@
         </div>
     </div>
 </section>
-<section class="catalog">
+<section class="catalog" id="catalog">
     <div class="container">
         <div class="title">
             Каталог
@@ -132,7 +134,7 @@
                     1600 руб
                 </div>
                 <div class="button">
-                    <a href="">Купить</a>
+                    <span>Купить</span>
                 </div>
                 <div class="product_delivery">
                     Доставка от 3 до 5 дней
@@ -159,7 +161,7 @@
                     1600 руб
                 </div>
                 <div class="button">
-                    <a href="">Купить</a>
+                    <span>Купить</span>
                 </div>
                 <div class="product_delivery">
                     Доставка от 3 до 5 дней
@@ -186,7 +188,7 @@
                     1600 руб
                 </div>
                 <div class="button">
-                    <a href="">Купить</a>
+                    <span>Купить</span>
                 </div>
                 <div class="product_delivery">
                     Доставка от 3 до 5 дней
@@ -213,7 +215,7 @@
                     1600 руб
                 </div>
                 <div class="button">
-                    <a href="">Купить</a>
+                    <span>Купить</span>
                 </div>
                 <div class="product_delivery">
                     Доставка от 3 до 5 дней
@@ -240,7 +242,7 @@
                     1600 руб
                 </div>
                 <div class="button">
-                    <a href="">Купить</a>
+                    <span>Купить</span>
                 </div>
                 <div class="product_delivery">
                     Доставка от 3 до 5 дней
@@ -357,6 +359,27 @@
         <a href="">
             <i class="sprite sprite-icon_you"></i>
         </a>
+    </div>
+</section>
+<section class="popUp" style="display: none">
+    <div class="popUp_content">
+        <div class="close">
+            <img src="img/close.png" alt="">
+        </div>
+        <h4>
+            Оформление <br> заказа
+        </h4>
+        <form action="">
+            <label for="">
+                Введите имя
+            </label>
+            <input type="text" placeholder="Иван">
+            <label for="">
+                Введите номер телефона
+            </label>
+            <input type="text" placeholder="+7 (123) 456-78-90">
+            <input type="submit" value="Сделать заказ">
+        </form>
     </div>
 </section>
 <link rel="stylesheet" href="css/main.css">
